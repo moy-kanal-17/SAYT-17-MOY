@@ -47,11 +47,6 @@ loader.load('./mesh/scene.gltf', function (gltf) {
     console.error("Ошибка загрузки модели 1:", error);
 });
 
-loader.load('./mesh/city/scene.gltf', function (gltf) {
-    scene.add(gltf.scene);
-}, undefined, function (error) {
-    console.error("Ошибка загрузки модели 2:", error);
-});
 
 // Загрузка текстуры для дороги
 const roadTexture = new THREE.TextureLoader().load('R3.jpg'); // Убедитесь, что файл существует
